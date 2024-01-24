@@ -1,0 +1,322 @@
+.main 
+{
+    padding: 40px 0px;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+}
+
+.Header1 
+{
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  z-index: 200;
+  
+}
+
+@media screen and (max-width: 1100px)
+{
+  .Header1
+{
+  right: 20%;
+  z-index: 200;
+  /* border: 2px solid pink; */
+  
+}
+}
+
+@media screen and (max-width: 920px)
+{
+  .Header1
+{
+  right: 25%;
+  z-index: 200;
+  /* border: 2px solid pink; */
+  
+}
+}
+
+@media screen and (max-width:560px) {
+
+  .Header1
+  {
+    right: 35%;
+    z-index: 200;
+    /* border: 2px solid pink; */
+    
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .Header1
+  {
+    right: 55%;
+    z-index: 200;
+    /* border: 2px solid pink; */
+    
+  }
+}
+
+@media screen and (max-width:490px) {
+
+  .Header1
+  {
+    top: 3%;
+    right: 58%;
+    z-index: 200;
+    /* border: 2px solid pink; */
+    
+  }
+}
+
+.button a{
+    font-family: "Poppins-Bold", Helvetica;
+    /* font-size: 22px; */
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+.headingDiv 
+{
+    font-family: Akira Expanded;
+    font-size: 400%;
+    font-weight: 800;
+    line-height: 200%;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: white;
+    margin: 5% 0%
+    ;
+}
+.description1 
+{
+    width: 80%;
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.benefits 
+{
+    width: 80%;
+    min-height: 70vh;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.benefitsHeading
+{
+  color: white;
+  width: 80%;
+  font-size: 2rem;
+}
+
+.data 
+{
+    width: 50%;
+    font-size: 25px;
+}
+
+
+
+.image 
+{
+    width: 450px;
+    height: 450px;
+    border-radius: 36px;
+    /* margin-top: 15px; */
+    box-shadow: 10px 10px 20px 	#fff, -10px -10px 20px #fff,
+    10px -10px 20px #fff, -10px 10px 20px #fff;
+  animation: moveUpDown 2s ease-in-out infinite alternate; /* Adjust the duration as needed */
+}
+
+.f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+.dataHeader 
+{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+    text-wrap: balance;
+}
+
+.ul 
+{
+    padding: 0;
+}
+
+.button 
+{
+    
+    width: 280px;
+    height: 60px;
+    background-color: #D90950;
+    border: 0;
+    border-radius: 15px;
+    border-top: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+    border-bottom: 3.5px solid white;
+    border-right: 3.5px solid white;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.buttonDiv 
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .headingDiv
+    {
+        width: 90%;
+        font-size: 1.5rem;
+        padding: 0% 5%;
+    }
+
+    .description1
+    {
+        font-size: 1.5rem;
+    }
+
+    .dataHeader
+    {
+        font-size: 1.5rem;
+    }
+
+    .data 
+    {
+        margin-right: 10px;
+    }
+
+    .image 
+    {
+       width: 350px;
+       height: 350px;
+       margin: 10% 0;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+
+    .benefits
+    {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .benefitsHeading
+{
+  text-align: center;
+}
+
+.data
+{
+    width: 100%;
+    margin: 0;
+}
+
+.benefitsHeading
+{
+    width: 100%;
+}
+
+.buttonDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.dataHeader{
+    padding:0% 5%;
+}
+
+}
+
+@media screen and (max-width: 500px)
+{
+
+    .headingDiv
+    {
+        font-size: 1.25rem;
+        margin-left: 7.5%;
+    }
+    .description1
+    {
+        width: 93%;
+        font-size: 1rem;
+    }
+
+    .dataHeader
+    {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .data 
+    {
+        width: 95%;
+    }
+
+    .image 
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+    .button 
+    {
+      font-size: 12px;
+    }
+}
